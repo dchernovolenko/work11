@@ -1,0 +1,47 @@
+            html {
+                background: url("black.jpg") no-repeat center center fixed;;
+                background-repeat:no-repeat;
+                background-size: cover;
+            }
+            body {
+                color: #ffffff;
+                text-align:center;
+                font-family: 'Oswald', sans-serif;
+                position:relative;
+            }
+            p {
+                text-align:center;
+                font-weight: 300;
+            }
+            h1 {
+                text-align:center;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 125%;
+            }
+            h2 {
+                text-align:center;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 110%;
+            }
+            h3 {
+                text-align:center;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 100%;
+            }
+            ul {
+                  font-weight: 300;
+                  list-style:none;
+                  padding:0;
+            }
+            a {
+                text-decoration:none;
+                color:inherit;
+            }
+            a:hover {
+              color: #C0C0C0;
+              text-decoration: underline;
+
+            }
