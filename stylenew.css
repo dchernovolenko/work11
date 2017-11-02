@@ -4,11 +4,18 @@
               radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
               radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
               radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+              radial-gradient(white, rgba(255,255,255,.1) 4px, transparent 50px),
+              radial-gradient(rgba(255,255,255,.3), rgba(255,255,255,.1) 1px, transparent 20px);
               radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-              background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-              background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-              /*taken from http://lea.verou.me/css3patterns/#*/
-            }
+              background-size: 550px 550px, 350px 350px, 300px 300px;
+              background-position: 0 0, 40px 60px, 130px 270px, 70px 100px,;
+              -webkit-animation: slide 20s linear infinite;
+              }
+
+              @-webkit-keyframes slide {
+                from { background-position: 0 0; }
+                to { background-position: -500px -450px; }
+              }
             body {
                 color: #ffffff;
                 text-align:center;
@@ -47,7 +54,17 @@
               font-style: italic;
             }
             .extreme{
-              text-shadow: 0 0 30px;
+              text-shadow: 0 0 40px white;
+            }
+            .extreme:hover{
+              visibility: hidden;
+            }
+            .content{
+              text-shadow: 0 0 40px red;
+            }
+            .navzone{
+              font-size: 18px;
+              text-shadow: 0 0 50px yellow;
             }
             #tehlulz {
               font-family: "Comic Sans MS", cursive, sans-serif
