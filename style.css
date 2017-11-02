@@ -1,7 +1,13 @@
             html {
-                background: url("black.jpg") no-repeat center center fixed;;
-                background-repeat:no-repeat;
-                background-size: cover;
+              background-color:black;
+              background-image:
+              radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+              radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+              radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+              radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+              background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+              background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+              /*taken from http://lea.verou.me/css3patterns/#*/
             }
             body {
                 color: #ffffff;
@@ -19,6 +25,7 @@
                 font-size: 40px;
                 line-height: 125%;
             }
+
             h2 {
                 text-align:center;
                 font-weight: 400;
@@ -36,6 +43,15 @@
                   list-style:none;
                   padding:0;
             }
+            .prose {
+              font-style: italic;
+            }
+            .extreme{
+              text-shadow: 0 0 30px;
+            }
+            #tehlulz {
+              font-family: "Comic Sans MS", cursive, sans-serif
+            }
             a {
                 text-decoration:none;
                 color:inherit;
@@ -43,5 +59,4 @@
             a:hover {
               color: #C0C0C0;
               text-decoration: underline;
-
             }
